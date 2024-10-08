@@ -14,7 +14,7 @@ The software's syntax is somewhat similar to SQL, and it is especially valued in
 
 ## Setting up SAS Studio
 
-SAS software is initially only avaliable for Windows, but we can set up a free SAS OnDemand for Academics: SAS Studio, which users of all systems can use as it runs on the cloud!
+SAS software is originally available only for Windows, but you can access SAS OnDemand for Academics: SAS Studio for free, which runs in the cloud and is accessible to users on any operating system!
 
 It's as simple as: 
 - Create a SAS profile 
