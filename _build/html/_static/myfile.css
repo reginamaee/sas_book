@@ -8,7 +8,7 @@
     border-left-width: .5rem;
     border-left-style: solid;
     margin: 1rem 0;
-    background-color: #986b6b;
+    background-color: #e2e2e2;
     border-color: #787878;
 }
 
@@ -18,9 +18,12 @@
 }
 
 /* Specific Admonition Types */
-.admonition.tip,
+.admonition.tip {
+    background-color: #f3f5f7;
+    border-color: #42b983;
+}
 .admonition.hint {
-    background-color: #42b983;
+    background-color: #f3f5f7;
     border-color: #42b983;
 }
 
@@ -100,3 +103,4 @@
 .theme-dark .admonition.error .custom-block-title {
     color: #c00;
 }
+
