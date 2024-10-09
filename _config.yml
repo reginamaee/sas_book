@@ -31,9 +31,9 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
-  favicon: /_static/favicon.ico
+  favicon: logo.png
   
 
 sphinx:
   config:
-    html_favicon: /_static/favicon.ico
+    html_favicon: logo.png
