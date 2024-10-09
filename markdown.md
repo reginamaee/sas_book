@@ -25,13 +25,22 @@ It's as simple as:
 :class: tip
 
 **1.** Proceed to https://www.sas.com/en_us/software/on-demand-for-academics.html and click on "Access Now".  
+
 **2.** Create a SAS profile by clicking "Sign-in" and then "Don't have a SAS profile".  
+
 **3.** A prompt should appear; click "Create Profile".  
+
 **4.** Fill out the basic required fields to create the profile - I would suggest utilizing your gotriton or triton email for academic purposes.  
+
 **5.** Check the box to agree to the SAS Profile terms and conditions at the bottom of the Create a profile page.  
+
 **6.** Create a password then proceed back to the SAS On Demand for Academics link and sign-in.  
+
 **7.** After signing in, it should ask you to register and choose the "United States" region as your preferred region.  
+
 **9.** After your request has been processed, you'll recieve an email confirmation. (This may take a while!)   
+
 **10.** Return to the SAS OnDemand for Academics sign-in apge and log-in with your credentials!  
+
 **11.** You should now have access to SAS Studio!  
 :::
