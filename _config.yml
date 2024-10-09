@@ -5,8 +5,6 @@ title: MA505 Introduction to SAS
 author: Regina-Mae Dominguez
 logo: logo.png
 
-build: 
-  output_folder: docs
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -33,9 +31,9 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
-  favicon: /images/favicon.ico
+  favicon: /_static/favicon.ico
   
 
 sphinx:
   config:
-    html_favicon: /images/favicon.ico
+    html_favicon: /_static/favicon.ico

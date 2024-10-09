@@ -19,7 +19,7 @@
 
 /* Specific Admonition Types */
 .admonition.tip {
-    background-color: rgba(66, 185, 131, .3);
+    background-color: rgba(66, 185, 131, .5);
     border-color: #42b983;
 }
 .admonition.hint {
