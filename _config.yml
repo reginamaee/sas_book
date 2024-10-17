@@ -9,11 +9,9 @@ logo: logo.png
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-execute:
   exclude_patterns:
-    - 'ipynb'
-  exclude_tags:
-    - no_run
+    - '*ipynb'
+
 
 
 # Define the name of the latex output file for PDF builds
