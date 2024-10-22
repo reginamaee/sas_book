@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>SAS Programming &#8212; MA505 Introduction to SAS</title>
+    <title>SAS Code Structure &#8212; MA505 Introduction to SAS</title>
   
   
   
@@ -62,6 +62,7 @@
     <link rel="icon" href="_static/logo.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="SAS PROC Functions" href="sas_proc_func.html" />
     <link rel="prev" title="Intro to SAS Studio" href="sas_studio_interface.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -183,7 +184,8 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">What is SAS?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sas_studio_interface.html">Intro to SAS Studio</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">SAS Programming</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">SAS Code Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sas_proc_func.html">SAS PROC Functions</a></li>
 </ul>
 
     </div>
@@ -369,7 +371,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>SAS Programming</h1>
+    <h1>SAS Code Structure</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -379,16 +381,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-sas-code">Example SAS Code</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-sas-code">Example SAS Code</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-of-a-sas-program">Structure of a SAS Program</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-sas-statement-rules">General SAS Statement Rules</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sas-table">Sas Table</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sas-libraries">SAS Libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sas-libraries">SAS Libraries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importing-overwatch-dataset-into-a-library">Importing Overwatch Dataset into a Library</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importing-a-csv">Importing a CSV</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importing-an-excel-file">Importing an EXCEL File</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -400,8 +405,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="sas-programming">
-<h1>SAS Programming<a class="headerlink" href="#sas-programming" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="sas-code-structure">
+<h1>SAS Code Structure<a class="headerlink" href="#sas-code-structure" title="Link to this heading">#</a></h1>
 <section id="example-sas-code">
 <h2>Example SAS Code<a class="headerlink" href="#example-sas-code" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
@@ -1570,12 +1575,6 @@ a:visited { color: #800080 }
 </html>
 </div></div>
 </div>
-<section id="comments">
-<h3>Comments<a class="headerlink" href="#comments" title="Link to this heading">#</a></h3>
-<p>Multi-line comments start with /* and end with */ - everything in between these two will be commented out.
-A single-line comment for a SAS statement that ends with a ; will start with just *.</p>
-<p>To comment and uncomment a line, you can also highlight the code then press Ctrl +/.</p>
-</section>
 </section>
 <section id="structure-of-a-sas-program">
 <h2>Structure of a SAS Program<a class="headerlink" href="#structure-of-a-sas-program" title="Link to this heading">#</a></h2>
@@ -1589,6 +1588,11 @@ columns, and joining tables
 </ul>
 <p>The example code written above has 2 steps - 1 DATA step and 1 PROC step. Steps end with run (while some end with quit).</p>
 <p>Most SAS statements (not steps) begin with a identifying keyword, but ALL statements end with a semicolon. A step is usually a sequence of SAS statements.</p>
+<section id="comments">
+<h3>Comments<a class="headerlink" href="#comments" title="Link to this heading">#</a></h3>
+<p>Multi-line comments start with /* and end with */ - everything in between these two will be commented out.
+A single-line comment for a SAS statement that ends with a ; will start with just *.</p>
+<p>To comment and uncomment a line, you can also highlight the code then press Ctrl +/.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-sas notranslate"><div class="highlight"><pre><span></span><span class="cm">/* This code sets the sashelp.class table into a dataset called myclass and calculates height in cm </span>
@@ -2983,6 +2987,7 @@ a:visited { color: #800080 }
 </div></div>
 </div>
 <p>This new example code above has 3 steps, 1 DATA step and 2 PROC steps. The whole code has 8 statements. The only statement of code that does not have an identidying keyword is the code creating the heightcm.</p>
+</section>
 <section id="general-sas-statement-rules">
 <h3>General SAS Statement Rules<a class="headerlink" href="#general-sas-statement-rules" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -3003,17 +3008,59 @@ a:visited { color: #800080 }
 <ul class="simple">
 <li><p><strong>name</strong></p></li>
 <li><p><strong>type</strong></p></li>
-<li><p><strong>length</strong></p></li>
+<li><p><strong>length</strong>
+<img src="_static/sas_col.png" width = "700"></p></li>
 </ul>
-<div>
- <img src="_static/images/sas_col.png" width = "700">
- </div><p>Column length is the number of bytes that is allocated for your column values. The length is related to your column types. Numeric columns are defaulted to 8 bytes (16 sig digits) and characters columns can be between 1-32,767 bytes. For predefined datasets, you can find information about the column attributes by running <code class="docutils literal notranslate"><span class="pre">proc</span> <span class="pre">contents</span> <span class="pre">data=*datasetname*;</span> <span class="pre">run;</span></code></p>
+<p>Column length is the number of bytes that is allocated for your column values. The length is related to your column types. Numeric columns are defaulted to 8 bytes (16 sig digits) and characters columns can be between 1-32,767 bytes. For predefined datasets, you can find information about the column attributes by running <code class="docutils literal notranslate"><span class="pre">proc</span> <span class="pre">contents</span> <span class="pre">data=*datasetname*;</span> <span class="pre">run;</span></code></p>
 </section>
 </section>
 <section id="sas-libraries">
 <h2>SAS Libraries<a class="headerlink" href="#sas-libraries" title="Link to this heading">#</a></h2>
 <p>A SAS library is a collection of SAS files that are stored in the same folder or directory on your computer.
-A library can be creatred with the LIBNAME SAS statement, this does not need a run at the end since it is a global statement (more on that later!)</p>
+A library can be creatred with the LIBNAME SAS statement, this does not need a run at the end since it is a global statement (more on that later!). <strong>Note: A SAS Library is temporary and will be removed after every session!</strong></p>
+<section id="importing-overwatch-dataset-into-a-library">
+<h3>Importing Overwatch Dataset into a Library<a class="headerlink" href="#importing-overwatch-dataset-into-a-library" title="Link to this heading">#</a></h3>
+<p>After we upload the Overwatch dataset into the SAS Studio session, we can create the MA505 library by using the following code below:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-sas notranslate"><div class="highlight"><pre><span></span><span class="c">/* creates library called ma505 */</span>
+<span class="k">libname</span> ma505 <span class="s">&quot;/home/u63936157&quot;</span>;
+</pre></div>
+</div>
+</div>
+</div>
+<p>This code creates a library called “ma505” in my SAS Studio home folder, which is the same folder I uploaded the <code class="docutils literal notranslate"><span class="pre">overwatch_stats.csv</span></code> dataset. To import the overwatch dataset into the <code class="docutils literal notranslate"><span class="pre">ma505</span></code> library, we will be using a <code class="docutils literal notranslate"><span class="pre">proc</span> <span class="pre">import</span></code> statement.</p>
+</section>
+<section id="importing-a-csv">
+<h3>Importing a CSV<a class="headerlink" href="#importing-a-csv" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-sas notranslate"><div class="highlight"><pre><span></span><span class="c">/* imports overwatch csv into ma505 library */</span>
+<span class="kr">proc import </span>datafile=<span class="s">&quot;/home/u63936157/overwatch_stats.csv&quot;</span> dbms=csv 
+		<span class="k">out</span>=ma505<span class="m">.</span>overwatch<span class="kr">;</span>
+<span class="kr">run;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>After running the code above, everytime we reference the <code class="docutils literal notranslate"><span class="pre">overwatch_stats</span></code> dataset, we can reference it as: <code class="docutils literal notranslate"><span class="pre">ma505.overwatch</span></code> instead of coding in its respective filepath.</p>
+</section>
+<section id="importing-an-excel-file">
+<h3>Importing an EXCEL File<a class="headerlink" href="#importing-an-excel-file" title="Link to this heading">#</a></h3>
+<p>In a similar manner, we can import excel files into a library using the following code structure below, where</p>
+<ul class="simple">
+<li><p>lib is the name of the library you would like to create</p></li>
+<li><p>XLSX is the engine that reads excel files</p></li>
+<li><p>path/file.xlsx is the file you are importing</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-sas notranslate"><div class="highlight"><pre><span></span><span class="k">LIBNAME</span> lib XLSX <span class="s">&quot;path/file.xlsx&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 
@@ -3056,6 +3103,15 @@ A library can be creatred with the LIBNAME SAS statement, this does not need a r
         <p class="prev-next-title">Intro to SAS Studio</p>
       </div>
     </a>
+    <a class="right-next"
+       href="sas_proc_func.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">SAS PROC Functions</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -3072,16 +3128,19 @@ A library can be creatred with the LIBNAME SAS statement, this does not need a r
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-sas-code">Example SAS Code</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-sas-code">Example SAS Code</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-of-a-sas-program">Structure of a SAS Program</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-sas-statement-rules">General SAS Statement Rules</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sas-table">Sas Table</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sas-libraries">SAS Libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sas-libraries">SAS Libraries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importing-overwatch-dataset-into-a-library">Importing Overwatch Dataset into a Library</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importing-a-csv">Importing a CSV</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importing-an-excel-file">Importing an EXCEL File</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
