@@ -4220,7 +4220,9 @@ This next code utilizes only the `IF/THEN` statement and defines a new Column ca
 <div class="cell_input docutils container">
 <div class="highlight-sas notranslate"><div class="highlight"><pre><span></span><span class="kr">data </span>cars_new;
     <span class="k">set</span> sashelp<span class="m">.</span>cars;
-    <span class="k">length</span> Cost $ <span class="m">10</span>; <span class="c">/* this ensures our character col Cost is of length 10 */</span>
+     <span class="cm">/* this ensures our character col Cost is of length 10, the &quot;$&quot; </span>
+<span class="cm">     indicates that Cost will be a string variable */</span>
+    <span class="k">length</span> Cost $ <span class="m">10</span>;
     <span class="k">if</span> MSRP&lt;<span class="m">30000</span> <span class="k">then</span> Cost = <span class="s">&quot;Okay&quot;</span>;
     <span class="k">if</span> MSRP&gt;=<span class="m">30000</span> <span class="k">then</span> Cost = <span class="s">&quot;Too High&quot;</span>;
     <span class="k">keep</span> Make Model Type MSRP Cost<span class="kr">;</span>
