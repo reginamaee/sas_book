@@ -62,6 +62,7 @@
     <link rel="icon" href="_static/logo.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PROC SGPLOT" href="proc_sgplot.html" />
     <link rel="prev" title="DATA Steps" href="sas_data_step.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -187,6 +188,7 @@
 <li class="toctree-l1"><a class="reference internal" href="sas_proc_func.html">SAS PROC Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sas_data_step.html">DATA Steps</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Plotting with PROC FREQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proc_sgplot.html">PROC SGPLOT</a></li>
 </ul>
 
     </div>
@@ -399,17 +401,15 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="plotting-with-proc-freq">
 <h1>Plotting with PROC FREQ<a class="headerlink" href="#plotting-with-proc-freq" title="Link to this heading">#</a></h1>
 <p>Let’s review the <code class="docutils literal notranslate"><span class="pre">proc</span> <span class="pre">freq</span></code> step. Recall that the <code class="docutils literal notranslate"><span class="pre">PROC</span> <span class="pre">FREQ</span></code> procedure generates frequency tables for categorical variables, showing the counts, percentages, and relationships between categories.</p>
-<div class="tip admonition">
+<div class="dropdown admonition">
 <p class="admonition-title"><em>General <code class="docutils literal notranslate"><span class="pre">PROC</span> <span class="pre">FREQ</span></code> syntax</em>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PROC</span> <span class="n">FREQ</span> <span class="n">DATA</span><span class="o">=</span><span class="nb">input</span><span class="o">-</span><span class="n">table</span> <span class="o">&lt;</span><span class="n">options</span><span class="o">&gt;</span><span class="p">;</span>
     <span class="n">TABLES</span> <span class="n">column</span><span class="o">-</span><span class="n">name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">/</span> <span class="o">&lt;</span><span class="n">table</span><span class="o">-</span><span class="n">options</span><span class="o">&gt;</span><span class="p">;</span>
 <span class="n">RUN</span><span class="p">;</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Let</span><span class="s1">&#39;s look at an example below: </span>
-</pre></div>
 </div>
-</div>
+<p>Let’s look at an example below:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-sas notranslate"><div class="highlight"><pre><span></span><span class="kr">proc freq </span>data=sashelp<span class="m">.</span>cars;
@@ -5579,6 +5579,15 @@ a:visited { color: #800080 }
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">DATA Steps</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="proc_sgplot.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">PROC SGPLOT</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>

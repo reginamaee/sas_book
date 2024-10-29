@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Notebooks with MyST Markdown &#8212; MA505 Introduction to SAS</title>
+    <title>PROC SGPLOT &#8212; MA505 Introduction to SAS</title>
   
   
   
@@ -58,10 +58,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown-notebooks';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'proc_sgplot';</script>
     <link rel="icon" href="_static/logo.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Plotting with PROC FREQ" href="freq_plot.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -181,14 +180,14 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">What is SAS?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sas_studio_interface.html">Intro to SAS Studio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="test.html">SAS Code Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sas_proc_func.html">SAS PROC Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sas_data_step.html">DATA Steps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="freq_plot.html">Plotting with PROC FREQ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="proc_sgplot.html">PROC SGPLOT</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">PROC SGPLOT</a></li>
 </ul>
 
     </div>
@@ -260,7 +259,7 @@
       
       
       
-      <li><a href="https://github.com/reginamaee/sas_book/issues/new?title=Issue%20on%20page%20%2Fmarkdown-notebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/reginamaee/sas_book/issues/new?title=Issue%20on%20page%20%2Fproc_sgplot.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -290,7 +289,7 @@
       
       
       
-      <li><a href="_sources/markdown-notebooks.md" target="_blank"
+      <li><a href="_sources/proc_sgplot.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -300,7 +299,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -361,9 +360,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -374,21 +371,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Notebooks with MyST Markdown</h1>
+    <h1>PROC SGPLOT</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -398,51 +385,44 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="notebooks-with-myst-markdown">
-<h1>Notebooks with MyST Markdown<a class="headerlink" href="#notebooks-with-myst-markdown" title="Link to this heading">#</a></h1>
-<p>Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html">the Notebooks with MyST Markdown documentation</a> for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.</p>
-<section id="an-example-cell">
-<h2>An example cell<a class="headerlink" href="#an-example-cell" title="Link to this heading">#</a></h2>
-<p>With MyST Markdown, you can define code cells with a directive like so:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="proc-sgplot">
+<h1>PROC SGPLOT<a class="headerlink" href="#proc-sgplot" title="Link to this heading">#</a></h1>
+<p>In the previous section, we explored creating bar graphs within a <code class="docutils literal notranslate"><span class="pre">proc</span> <span class="pre">freq</span></code> step. However, this approach offers limited customization options. By using a different procedure, <code class="docutils literal notranslate"><span class="pre">proc</span> <span class="pre">sgplot</span></code>, we can easily produce a wide range of high-quality statistical graphics with greater flexibility and layering options. This procedure is commonly used to generate scatter plots, bar charts, line plots, histograms, box plots, and more. It is part of the SAS ODS Graphics system, which allows users to visualize data effectively for analysis and reporting.</p>
+<div class="dropdown admonition">
+<p class="admonition-title"><em>General <code class="docutils literal notranslate"><span class="pre">PROC</span> <span class="pre">SGPLOT</span></code> statement</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PROC</span> <span class="n">SGPLOT</span> <span class="n">DATA</span> <span class="o">=</span> <span class="nb">input</span><span class="o">-</span><span class="n">table</span> <span class="o">&lt;</span><span class="n">options</span><span class="o">&gt;</span><span class="p">;</span>
+     <span class="n">plot</span> <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">/</span> <span class="o">&lt;</span><span class="n">options</span><span class="o">&gt;</span><span class="p">;</span>
+    <span class="o">&lt;</span><span class="n">appearance</span> <span class="n">statements</span><span class="o">&gt;</span><span class="p">;</span>
+   <span class="o">&lt;</span><span class="n">additional</span> <span class="n">filtering</span><span class="o">/</span><span class="n">formatting</span><span class="o">/</span><span class="n">etc</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="n">RUN</span><span class="p">;</span>
+
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-</pre></div>
-</div>
-</div>
-</div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>Jupyter Book uses <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> to convert text-based files to notebooks, and can support <a class="reference external" href="https://jupyterbook.org/file-types/jupytext.html">many other text-based notebook files</a>.</p>
-</div>
-</section>
-<section id="create-a-notebook-with-myst-markdown">
-<h2>Create a notebook with MyST Markdown<a class="headerlink" href="#create-a-notebook-with-myst-markdown" title="Link to this heading">#</a></h2>
-<p>MyST Markdown notebooks are defined by two things:</p>
 <ol class="arabic simple">
-<li><p>YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-See the YAML at the top of this page for example.</p></li>
-<li><p>The presence of <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> directives, which will be executed with your book.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PROC</span> <span class="pre">SGPLOT</span> <span class="pre">DATA</span> <span class="pre">=</span> <span class="pre">input-table</span> <span class="pre">&lt;options&gt;;</span></code></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">PROC</span> <span class="pre">SGPLOT</span></code> starts the procedure, and <code class="docutils literal notranslate"><span class="pre">DATA</span> <span class="pre">=</span> <span class="pre">input-table</span></code> specifies the dataset you want to use for the plot</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;options&gt;</span></code> within PROC SGPLOT can include additional procedure-level settings</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">plot</span> <span class="pre">statement(s)</span> <span class="pre">/</span> <span class="pre">&lt;options&gt;;</span></code></p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">plot</span> <span class="pre">statement(s)</span></code> specify the type of plot you want to create, such as scatter, vbar, hbar, series, or histograms. Multiple plot statements can be included to layer different types of graphs on the same chart.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">&lt;options&gt;</span></code> allows for plot-specific customization, such as setting labels, colors, markers, or axis opti</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;appearance</span> <span class="pre">statements&gt;;</span></code></p>
+<ul class="simple">
+<li><p>these statements control the overall appearance of the plot, such as adding titles, labels, legends, or setting axis attributes</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;additional</span> <span class="pre">filtering/formatting/etc&gt;</span></code></p>
+<ul class="simple">
+<li><p>this section can include additional options to refine the plot, including filtering data, formatting the value output.</p></li>
+</ul>
+</li>
 </ol>
-<p>That’s all that is needed to get started!</p>
-</section>
-<section id="quickly-add-yaml-metadata-for-myst-notebooks">
-<h2>Quickly add YAML metadata for MyST Notebooks<a class="headerlink" href="#quickly-add-yaml-metadata-for-myst-notebooks" title="Link to this heading">#</a></h2>
-<p>If you have a markdown file and you’d like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">markdownfile</span><span class="o">.</span><span class="n">md</span>
-</pre></div>
 </div>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -454,16 +434,16 @@ See the YAML at the top of this page for example.</p></li>
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "sas"
         },
         kernelOptions: {
-            name: "python3",
+            name: "sas",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'sas'</script>
 
                 </article>
               
@@ -475,29 +455,21 @@ See the YAML at the top of this page for example.</p></li>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="freq_plot.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Plotting with PROC FREQ</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

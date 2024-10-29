@@ -10,4 +10,5 @@ chapters:
 - file: sas_proc_func.ipynb
 - file: sas_data_step.ipynb
 - file: freq_plot.ipynb
+- file: proc_sgplot.ipynb
 
