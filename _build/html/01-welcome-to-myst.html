@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Notebooks with MyST Markdown &#8212; MA505 Introduction to SAS</title>
+    <title>Welcome to using MyST in Jupyter &#8212; MA505 Introduction to SAS</title>
   
   
   
@@ -58,7 +58,7 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown-notebooks';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '01-welcome-to-myst';</script>
     <link rel="icon" href="_static/logo.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -259,7 +259,7 @@
       
       
       
-      <li><a href="https://github.com/reginamaee/sas_book/issues/new?title=Issue%20on%20page%20%2Fmarkdown-notebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/reginamaee/sas_book/issues/new?title=Issue%20on%20page%20%2F01-welcome-to-myst.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -289,7 +289,7 @@
       
       
       
-      <li><a href="_sources/markdown-notebooks.md" target="_blank"
+      <li><a href="_sources/01-welcome-to-myst.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -299,7 +299,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -373,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Notebooks with MyST Markdown</h1>
+    <h1>Welcome to using MyST in Jupyter</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -383,10 +383,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Welcome to using MyST in Jupyter</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#quickstart-tutorials">Quickstart Tutorials</a></li>
 </ul>
+
             </nav>
         </div>
     </div>
@@ -397,51 +397,90 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="notebooks-with-myst-markdown">
-<h1>Notebooks with MyST Markdown<a class="headerlink" href="#notebooks-with-myst-markdown" title="Link to this heading">#</a></h1>
-<p>Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html">the Notebooks with MyST Markdown documentation</a> for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.</p>
-<section id="an-example-cell">
-<h2>An example cell<a class="headerlink" href="#an-example-cell" title="Link to this heading">#</a></h2>
-<p>With MyST Markdown, you can define code cells with a directive like so:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+  <hr class="docutils" />
+<p>title: Working with MyST Markdown
+subtitle: In JupyterLab
+license: CC-BY-4.0
+github: <a class="github reference external" href="https://github.com/executablebooks/mystjs">executablebooks/mystjs</a>
+subject: Tutorial
+venue: MyST Markdown
+biblio:
+volume: ‘1’
+issue: ‘42’
+authors:</p>
+<ul class="simple">
+<li><p>name: Rowan Cockett
+email: <a class="reference external" href="mailto:rowan&#37;&#52;&#48;curvenote&#46;com">rowan<span>&#64;</span>curvenote<span>&#46;</span>com</a>
+corresponding: true
+orcid: 0000-0002-7859-8394
+affiliations:</p>
+<ul>
+<li><p>Curvenote</p></li>
+<li><p>ExecutableBooks
+date: 2023/07/05</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<p>MyST (<a class="reference external" href="https://mystmd.org">https://mystmd.org</a>) is an ecosystem of open-source, community-driven tools designed for scientific communication, including a powerful authoring framework that supports blogs, online books, scientific papers, reports and journals articles!</p>
+<p>🎉 MyST now works in JupyterLab 4.0, see <a class="reference external" href="https://github.com/executablebooks/jupyterlab-myst/pull/142">#142</a>! 🎉</p>
+<section id="welcome-to-using-myst-in-jupyter">
+<h1>Welcome to using MyST in Jupyter<a class="headerlink" href="#welcome-to-using-myst-in-jupyter" title="Link to this heading">#</a></h1>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Installing MyST Markdown
+These notebooks should be rendered with <code class="docutils literal notranslate"><span class="pre">jupyterlab_myst</span></code> (<a class="reference external" href="https://github.com/executablebooks/jupyterlab-myst">JupyterLab extension</a>) or <code class="docutils literal notranslate"><span class="pre">myst</span></code> (<a class="reference external" href="https://mystmd.org/guide">command line tools</a>).</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># For working in JupyterLab</span>
+pip<span class="w"> </span>install<span class="w"> </span>jupyterlab_myst
+<span class="c1"># For working on the command-line</span>
+npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>mystmd
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
+<div class="dropdown admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Verifying the <code class="docutils literal notranslate"><span class="pre">jupyterlab_myst</span></code> Installation
+To verify that the extension is registered with Jupyter, use:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>jupyter labextension list
 </pre></div>
 </div>
-</div>
-</div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>Jupyter Book uses <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> to convert text-based files to notebooks, and can support <a class="reference external" href="https://jupyterbook.org/file-types/jupytext.html">many other text-based notebook files</a>.</p>
-</div>
-</section>
-<section id="create-a-notebook-with-myst-markdown">
-<h2>Create a notebook with MyST Markdown<a class="headerlink" href="#create-a-notebook-with-myst-markdown" title="Link to this heading">#</a></h2>
-<p>MyST Markdown notebooks are defined by two things:</p>
-<ol class="arabic simple">
-<li><p>YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-See the YAML at the top of this page for example.</p></li>
-<li><p>The presence of <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> directives, which will be executed with your book.</p></li>
-</ol>
-<p>That’s all that is needed to get started!</p>
-</section>
-<section id="quickly-add-yaml-metadata-for-myst-notebooks">
-<h2>Quickly add YAML metadata for MyST Notebooks<a class="headerlink" href="#quickly-add-yaml-metadata-for-myst-notebooks" title="Link to this heading">#</a></h2>
-<p>If you have a markdown file and you’d like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">markdownfile</span><span class="o">.</span><span class="n">md</span>
+<p>You should see the following text in the output:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>jupyterlab-myst v2.x.x enabled OK
 </pre></div>
 </div>
+<p>In Jupyter 4.0 you can also see the MyST plugin in the Jupyter Extension Manager inside of JupyterLab.</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="attachment:5d201865-319b-49cf-affa-07789d045463.png"><img alt="attachment:5d201865-319b-49cf-affa-07789d045463.png" src="attachment:5d201865-319b-49cf-affa-07789d045463.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">In the Jupyter Extension Manager you will see that the MyST extension is installed and enabled.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
 </section>
+<section id="quickstart-tutorials">
+<h1>Quickstart Tutorials<a class="headerlink" href="#quickstart-tutorials" title="Link to this heading">#</a></h1>
+<p>🛠 Throughout these tutorials, whenever you’re supposed to do something you will see a 🛠</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+🧑🏼‍🏫 MyST Markdown Basics</div>
+<p class="sd-card-text">Include figures and equations in your documents, easily cross-referencing content throughout your website, article or paper.</p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="./02-myst-markdown-basics.ipynb"><span>./02-myst-markdown-basics.ipynb</span></a></div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+🪐 Inline Execution</div>
+<p class="sd-card-text">You can use the <code class="docutils literal notranslate"><span class="pre">{eval}</span></code> role to evaluate variables directly inside of your markdown cells, including widgets, sparklines and other variables.</p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="./03-inline-interactivity.ipynb"><span>./03-inline-interactivity.ipynb</span></a></div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+🏷 Adding Frontmatter</div>
+<p class="sd-card-text">You can add frontmatter like math macros, abbreviations, and information about title, authors, licenses, and affiliations.</p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="./04-myst-frontmatter.ipynb"><span>./04-myst-frontmatter.ipynb</span></a></div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -490,10 +529,10 @@ See the YAML at the top of this page for example.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Welcome to using MyST in Jupyter</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#quickstart-tutorials">Quickstart Tutorials</a></li>
 </ul>
+
   </nav></div>
 
 </div></div>
