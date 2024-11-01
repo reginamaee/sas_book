@@ -11,4 +11,5 @@ chapters:
 - file: sas_data_step.ipynb
 - file: freq_plot.ipynb
 - file: proc_sgplot.ipynb
+- file: data_mani.ipynb
 
